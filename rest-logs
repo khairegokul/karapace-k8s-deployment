@@ -1,0 +1,45 @@
+Starting Karapace REST API
+Cannot enable Sentry.io sending: importing 'sentry_sdk' failed
+karapace                MainThread      INFO            Karapace initialized
+karapace.kafka_rest_apis        MainThread      INFO            REST proxy starting with (delegated authorization=False)
+root                    MainThread      INFO    
+====================================================================================================
+Starting karapace rest
+====================================================================================================
+root                    MainThread      DEBUG           Config {'access_logs_debug': False, 'access_log_class': <class 'aiohttp.web_log.AccessLogger'>, 'advertised_port': 8081, 'advertised_hostname': 'karapace-rest', 'advertised_protocol': 'http', 'bootstrap_uri': 'kafka:29092', 'sasl_bootstrap_uri': None, 'client_id': 'sr-1', 'compatibility': 'BACKWARD', 'connections_max_idle_ms': 15000, 'consumer_enable_auto_commit': True, 'consumer_request_timeout_ms': 11000, 'consumer_request_max_bytes': 67108864, 'consumer_idle_disconnect_timeout': 0, 'fetch_min_bytes': 1, 'group_id': 'schema-registry', 'http_request_max_size': 1048576, 'host': '0.0.0.0', 'port': 8082, 'server_tls_certfile': None, 'server_tls_keyfile': None, 'registry_host': 'karapace-registry', 'registry_port': 8081, 'registry_user': None, 'registry_password': '****', 'registry_ca': None, 'registry_authfile': None, 'rest_authorization': False, 'rest_base_uri': 'http://97621831741f:8081', 'log_handler': 'stdout', 'log_level': 'DEBUG', 'log_format': '%(name)-20s\t%(threadName)s\t%(levelname)-8s\t%(message)s', 'master_eligibility': True, 'replication_factor': 1, 'security_protocol': 'PLAINTEXT', 'ssl_cafile': None, 'ssl_certfile': None, 'ssl_keyfile': None, 'ssl_check_hostname': True, 'ssl_crlfile': None, 'ssl_password': '****', 'sasl_mechanism': None, 'sasl_plain_username': None, 'sasl_plain_password': '****', 'sasl_oauth_token': None, 'topic_name': '_schemas', 'metadata_max_age_ms': 60000, 'admin_metadata_max_age': 0, 'producer_acks': 1, 'producer_compression_type': None, 'producer_count': 5, 'producer_linger_ms': 100, 'producer_max_request_size': 1048576, 'session_timeout_ms': 10000, 'karapace_rest': 1, 'karapace_registry': False, 'name_strategy': 'topic_name', 'name_strategy_validation': True, 'master_election_strategy': 'lowest', 'protobuf_runtime_directory': 'runtime', 'statsd_host': 'statsd-exporter', 'statsd_port': 8125, 'kafka_schema_reader_strict_mode': False, 'kafka_retriable_errors_silenced': True, 'use_protobuf_formatter': False, 'waiting_time_before_acting_as_master_ms': 5000, 'tags': {'app': 'Karapace'}, 'sentry': {'dsn': None}}
+karapace.instrumentation.prometheus     MainThread      INFO            Setting up prometheus metrics
+asyncio                 MainThread      DEBUG           Using selector: EpollSelector
+======== Running on http://0.0.0.0:8082 ========
+(Press CTRL+C to quit)
+aiohttp.access          MainThread      INFO            0.003306s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=847b request_body=-b
+aiohttp.access          MainThread      INFO            0.000393s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=201b request_body=-b
+aiohttp.access          MainThread      INFO            0.003233s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=4818b request_body=-b
+aiohttp.access          MainThread      INFO            0.000433s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=202b request_body=-b
+aiohttp.access          MainThread      INFO            0.002751s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=4820b request_body=-b
+aiohttp.access          MainThread      INFO            0.000366s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=202b request_body=-b
+aiohttp.access          MainThread      INFO            0.003454s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=4818b request_body=-b
+aiohttp.access          MainThread      INFO            0.000302s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=202b request_body=-b
+aiohttp.access          MainThread      INFO            0.002652s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=4818b request_body=-b
+aiohttp.access          MainThread      INFO            0.000301s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=202b request_body=-b
+aiohttp.access          MainThread      INFO            0.002823s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=4818b request_body=-b
+aiohttp.access          MainThread      INFO            0.000299s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=202b request_body=-b
+aiohttp.access          MainThread      INFO            0.002874s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=4818b request_body=-b
+aiohttp.access          MainThread      INFO            0.000356s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=202b request_body=-b
+aiohttp.access          MainThread      INFO            0.003115s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=4818b request_body=-b
+karapace.kafka.admin.KafkaAdminClient   MainThread      INFO            Fetching cluster metadata with topic filter: None
+aiohttp.access          MainThread      INFO            0.011444s - "GET /topics HTTP/1.1" 200 "curl/8.7.1" response=422b request_body=-b
+aiohttp.access          MainThread      INFO            0.000299s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=202b request_body=-b
+aiohttp.access          MainThread      INFO            0.002995s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=6677b request_body=-b
+aiohttp.access          MainThread      INFO            0.002309s - "GET /topics HTTP/1.1" 406 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" response=228b request_body=-b
+aiohttp.access          MainThread      INFO            0.000314s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=202b request_body=-b
+aiohttp.access          MainThread      INFO            0.003589s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=6847b request_body=-b
+aiohttp.access          MainThread      INFO            0.001682s - "GET /topics HTTP/1.1" 406 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" response=228b request_body=-b
+aiohttp.access          MainThread      INFO            0.000323s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=203b request_body=-b
+aiohttp.access          MainThread      INFO            0.003531s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=6882b request_body=-b
+aiohttp.access          MainThread      INFO            0.000309s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=203b request_body=-b
+aiohttp.access          MainThread      INFO            0.003414s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=6881b request_body=-b
+aiohttp.access          MainThread      INFO            0.000298s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=203b request_body=-b
+aiohttp.access          MainThread      INFO            0.003020s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=6882b request_body=-b
+aiohttp.access          MainThread      INFO            0.000380s - "GET /_health HTTP/1.1" 200 "Python/3.10 aiohttp/3.10.5" response=203b request_body=-b
+aiohttp.access          MainThread      INFO            0.003177s - "GET /metrics HTTP/1.1" 200 "Prometheus/3.0.1" response=6880b request_body=-b
+aiohttp.access          MainThrea
